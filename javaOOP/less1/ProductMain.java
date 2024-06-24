@@ -18,7 +18,7 @@ public class ProductMain {
                 true, EPackage.GLASS.getMaterial(), 0.5F);
 
         Product HotCan1 = new HotDrink("Быстро Кофе", 55, LocalDate.of(2024, 5, 1),
-                65, EPackage.CAN.getMaterial(), 0.5);
+                (double) 65, EPackage.CAN.getMaterial(), 1);
 
         VendingMachine vm = new WaterVendingMachine();
 
@@ -28,12 +28,15 @@ public class ProductMain {
 
         vm.addProducts(List.of(bottle1, bottle1, bottle1, bottle2, bottle2, bottle2));
 
-        vm1.addProducts(List.of(HotCan1, HotCan1, HotCan1, HotCan1, HotCan1, HotCan1))
+        vm1.addProducts(List.of(HotCan1, HotCan1, HotCan1, HotCan1, HotCan1, HotCan1));
 
         System.out.println(vm.getProducts());
+
+        System.out.println(vm1.getProducts());
 
         vm.getProduct("Родники");
 
         System.out.println(vm.getProducts());
     }
+    
 }

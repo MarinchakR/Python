@@ -15,6 +15,10 @@ public  class VendingMachine {
         this.products = products;
     }
 
+    public void addProducts(List<Product> products) {
+        this.products.addAll(products);
+    }
+
     public Product getProduct(String name) {
 
         //        products.stream().filter(product -> product.getName().equals(name)).findFirst().orElse(null);

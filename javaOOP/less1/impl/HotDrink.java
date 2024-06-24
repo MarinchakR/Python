@@ -8,7 +8,7 @@ public class HotDrink extends Product {
     
     private float volume;
     private String pack;
-    private boolean isSpark;
+    private Double temperature;
 
     public HotDrink(String name, double price, LocalDate releaseDate, Double temperature, String pack, float volume ) {
         super(name, price, releaseDate);
@@ -26,7 +26,7 @@ public class HotDrink extends Product {
         return pack;
     }
 
-    public float temperature() {
+    public Double temperature() {
         return temperature;
     }
 
